@@ -1,0 +1,28 @@
+/* 
+etiquetaS - P, H2 
+id = #id
+classes = .nombreDeClase
+
+*/
+
+
+
+body header {
+ background-color: rgb(148, 117, 70);
+}
+
+h2 {
+    color: white;
+}
+
+body header img {
+    width: ;
+    height: ;
+    margin-left: ;
+}
+
+main {
+    width: 100%;
+    height: ;
+}
+
