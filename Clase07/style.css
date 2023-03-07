@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: #8f8787;
+}
+
+.me {
+  width: 200px;
+  height: 200px;
+
+  margin: 30px;
+  border-radius: 50%;
+  border: 1px solid #8f8787;
+}
+
+body {
+  background-color: #8f8787;
+}
