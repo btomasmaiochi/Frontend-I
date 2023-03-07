@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black01: #222222;
+  --white01: #ffffff;
+  --white02: #f3f3f3;
+  --brown: #3c2313;
+  --gray01: #786960;
+  --gray02: #666666;
+  --gray03: #8a8787;
+  --yellow: #f0a83e;
+}
+
+.header-top {
+  background-color: var(--black01);
+  color: var(--white02);
+
+  width: 100%;
+  height: 28px;
+
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.header-top-right {
+  list-style: none;
+  /* display: flex; */
+}
+
+.header-top-right > li:first-child {
+  margin-right: 10px;
+}
+
+.header-bottom {
+  background-color: var(--yellow);
+
+  width: 100%;
+  height: 61px;
+  padding: 40px;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 250px;
+  height: 38px;
+}
+
+.header-ul {
+  list-style: none;
+}
+
+.nav-a {
+  color: var(--white01);
+  text-decoration: none;
+  list-style: none;
+
+  margin-right: 16px;
+}
+
+.nav-a > img {
+  margin-right: 8px;
+}
+
+a:hover {
+  color: var(--brown);
+}
+
+.img-container {
+  width: 100%;
+  height: 470px;
+
+  background-image: url(../assets/bowl-and-pet-daities-on-green-background\ 1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-text {
+  width: 50%;
+  height: 470px;
+  float: right;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.white-bg {
+  background-color: var(--white01);
+  border-radius: 8px;
+  padding: 10px 30px;
+
+  margin-bottom: 30px;
+}
+
+.comederos-off {
+  color: var(--white01);
+  margin-bottom: 16px;
+}
+
+.comederos-btn {
+  background-color: var(--yellow);
+  padding: 14px 22px;
+  border-radius: 25px;
+  border: 1px solid var(--brown);
+}
+
+.comederos-btn:hover {
+  color: var(--white01);
+  background-color: var(--brown);
+  border: 1px solid var(--yellow);
+}
+
+.best-products {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.best-products-text {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: 50px 0;
+}
+
+.cards {
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.product-card {
+  margin-left: 32px;
+}
+
+.flex {
+  display: flex;
+}
