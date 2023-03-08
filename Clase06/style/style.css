@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 :root {
@@ -13,6 +14,7 @@
   --gray02: #666666;
   --gray03: #8a8787;
   --yellow: #f0a83e;
+  --cards: #FBFAF6;
 }
 
 .header-top {
@@ -114,7 +116,7 @@ a:hover {
   background-color: var(--yellow);
   padding: 14px 22px;
   border-radius: 25px;
-  border: 1px solid var(--brown);
+  border: 1px solid var(--yellow);
 }
 
 .comederos-btn:hover {
@@ -137,6 +139,16 @@ a:hover {
   margin: 50px 0;
 }
 
+.best-products-text > h1 {
+  font-size: 40px;
+  margin: 16px 0 8px 0;
+}
+
+.best-products-text > h4 {
+  color: var(--gray02);
+  font-weight: lighter;
+}
+
 .cards {
   align-items: center;
   justify-content: center;
@@ -145,6 +157,78 @@ a:hover {
 
 .product-card {
   margin-left: 32px;
+  width: 265px;
+  height: 350px;
+  background-color: var(--cards);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transition: 0.3s;
+	transform: scale(1.1);
+}
+
+.card-p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-value {
+  color: var(--yellow);
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.contact {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: 100px 0 20px 0;
+}
+
+.contact > h1 {
+  font-size: 30px;
+}
+
+.form {
+  width: 340px;
+  height: 170px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+  border: 1px solid var(--brown);
+  padding: 15px;
+
+  margin-bottom: 10px;;
+
+  background-color: var(--brown);
+  color: var(--white01);
+}
+
+input:first-child {
+  margin-top: 20px;;
+}
+
+.buttons {
+  width: 110px;
+  height: 34px;
+  border-radius: 15px;
+  
 }
 
 .flex {

@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="shortcut icon" href="https://img.freepik.com/premium-vector/cute-petshop-logo-with-cat-dog_454510-56.jpg?w=2000">
     <link rel="stylesheet" href="./style/style.css" />
     <title>Petshop</title>
   </head>
@@ -75,39 +76,39 @@
         <div class="best-products-text flex">
           <img src="./assets/yellow-pawprint.svg" alt="yellow-pawprint.svg" />
           <h1>Productos Destacados</h1>
-          <h4>Comederos - Accesorios - Comida</h4>
+          <h4>Comederos  -  Accesorios  -  Comida</h4>
         </div>
         <div class="cards flex">
           <div class="product-card">
             <img src="./assets/churrasquito.svg" alt="" />
-            <p>Juguete Churrasquito</p>
-            <p>$150</p>
+            <p class="card-p">Juguete Churrasquito</p>
+            <p class="card-value">$150</p>
           </div>
           <div class="product-card">
             <img src="./assets/comedero.svg" alt="" />
-            <p>Comedero para perro</p>
-            <p>$250</p>
+            <p class="card-p">Comedero para perro</p>
+            <p class="card-value">$250</p>
           </div>
           <div class="product-card">
             <img src="./assets/huesito.svg" alt="" />
-            <p>Juguete Huesito</p>
-            <p>$650</p>
+            <p class="card-p">Juguete Huesito</p>
+            <p class="card-value">$650</p>
           </div>
         </div>
       </section>
-      <section class="contact">
-        <h1>Contáctanos</h1>
-        <form action="" method="get">
-          <div class="inputs">
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-          </div>
-          <div class="buttons">
-            <button type="reset">Resetear</button>
-            <button type="submit">Enviar</button>
-          </div>
+      <section class="contact flex">
+        <div class="h1-text">
+          <h1>Contáctanos</h1>
+        </div>
+        <form  class="form" action="" method="get">
+            <input type="text" placeholder="Nombre y Apellido"/>
+            <input type="text" placeholder="Correo electrónico"/>
+            <input type="text" placeholder="Teléfono"/>
         </form>
+        <div class="buttons">
+          <button class="reset buttons" type="reset">Resetear</button>
+          <button class="submit buttons" type="submit">Enviar</button>
+        </div>
       </section>
       <section class="subscribe">
         <div class="subscribe-left">
@@ -116,7 +117,7 @@
         </div>
         <div class="subscribe-right">
           <form action="" method="get">
-            <input type="text" name="" id="" />
+            <input type="text" name="subscribe" placeholder="Ingresá tu correo electrónico"/>
             <button>Susribirme</button>
           </form>
         </div>
