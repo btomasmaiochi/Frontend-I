@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Poppins', sans-serif;
+}
+
+:root {
+    --aqua: #1CD1B0;
+    --blue: #00669F;
+    --gray: #F3F3F3;
+    --white: #E5E5E5;
+    --white-text: #FFF9F9;
+    --black: #000000;
+    --red: #CC2424;
+}
+
+header {
+    width: 100%;
+    height: 38px;
+    background-color: var(--aqua);
+
+    display: flex;
+    align-items: center;
+    padding: 10px 27px;
+}
+
+.dto {
+    font-weight: 500;
+}
+
+.heroes {
+    width: 100%;
+    height: 101px;
+    background-color: var(--blue);
+
+    display: flex;
+    align-items: center;
+    padding: 28px;
+
+    position: sticky;
+}
+
+.top {
+    width: 300px;
+    height: 194px;
+}
+
+.bg-image-batman {
+    background-image: url(./assets/bg-batman.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 194px;
+    position: relative;
+}
+
+.bg-image-harley {
+    background-image: url(./assets/bg-harley.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 194px;
+    position: relative;
+}
+
+.profile {
+    position: absolute;
+    margin: 127px 64.5px 0 64.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile > img {
+    /* border-radius: 50%;*/
+}
+
+.name {
+    font-size: 30px;
+    font-weight: 400;
+
+    margin-top: 18px;
+    width: 171px;
+    text-align: center;
+}
+
+.fa-heart {
+    color: var(--red);
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 21px;
+}
+
+.card-batman, .card-harley {
+    width: 300px;
+    height: 529px;
+    border-radius: 16px 16px 0 0 ;
+    background-color: var(--gray);
+
+    box-shadow: rgba(190, 190, 190, 0.25) 0px 50px 100px -20px, rgba(190, 190, 190, 0.3) 0px 30px 60px -30px, rgba(190, 190, 190, 0.35) 0px -2px 6px 0px inset;
+    border: rgb(190, 190, 190);
+}
+
+.bottom {
+    width: 267px;
+    height: 113px;
+    margin: 118px 16px 18px 16px;
+}
+
+.text {
+    font-size: 16px;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.btn {
+    padding: 15px 36px;
+    background-color: var(--blue); 
+    color: var(--white-text);
+    border: none;
+
+    margin-top: 37px;
+    margin-bottom: 19px;
+}
+
+.btn:hover {
+    background-color: var(--white-text);
+    border: 1px solid var(--blue);
+    color: var(--blue);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card-batman, .card-harley, .card-batman {
+    margin: 153px 16px;
+}
+
+footer {
+    width: 100%;
+    height: 51px;
+    background-color: var(--blue);
+    color: var(--white-text);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 16px;
+}
