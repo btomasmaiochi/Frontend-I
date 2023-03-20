@@ -4,13 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+   
     <link rel="shortcut icon" href="https://img.freepik.com/premium-vector/cute-petshop-logo-with-cat-dog_454510-56.jpg?w=2000">
     <link rel="stylesheet" href="./style/style.css" />
     <title>Petshop</title>
@@ -67,7 +61,7 @@
         <div class="img-container">
           <div class="img-text flex">
             <h1 class="white-bg">¡Es un placer tenerte aquí!</h1>
-            <h3 class="comederos-off">¡Comederos en descuento!</h3>
+            <h3 class="comederos-off"> Ver comederos en descuento</h3>
             <button class="comederos-btn">COMEDEROS</button>
           </div>
         </div>
@@ -100,10 +94,10 @@
         <div class="h1-text">
           <h1>Contáctanos</h1>
         </div>
-        <form  class="form" action="" method="get">
-            <input type="text" placeholder="Nombre y Apellido"/>
-            <input type="text" placeholder="Correo electrónico"/>
-            <input type="text" placeholder="Teléfono"/>
+        <form class="form" action="" method="get">
+            <input class="first-input" type="text" placeholder="Nombre y Apellido"/>
+            <input class="second-input" type="text" placeholder="Correo electrónico"/>
+            <input class="third-input" type="text" placeholder="Teléfono"/>
         </form>
         <div class="buttons">
           <button class="reset buttons" type="reset">Resetear</button>
@@ -112,26 +106,51 @@
       </section>
       <section class="subscribe">
         <div class="subscribe-left">
-          <img src="./assets/send-email.svg" alt="" />
+          <img src="./assets/send-email.svg" alt="send-email" />
           <h2>Suscríbete para más novedades</h2>
         </div>
         <div class="subscribe-right">
-          <form action="" method="get">
-            <input type="text" name="subscribe" placeholder="Ingresá tu correo electrónico"/>
-            <button>Susribirme</button>
-          </form>
+            <form class="subscribe-form" action="" method="get">
+              <input class="subscribe-input" type="text" name="subscribe" placeholder="Ingresá tu correo electrónico"/>
+              <button class="subscribe-btn " >Susribirme</button>
+            </form>
         </div>
       </section>
     </main>
 
     <footer>
-      <a class="social" href="https://www.linkedin.com/in/btomasmaiochi/">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a class="social" href="https://www.linkedin.com/in/btomasmaiochi/">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-    </footer>
-  </body>
+      <div class="footer-top">
+        <div class="footer-right">
+          <div class="location">
+            <img src="./assets/location.svg" alt="">
+            <div class="right-flex">             
+              <h3> Localidad </h3>
+              <p>Calle - provincia</p>
+            </div>
+          </div>
+          <div class="phone">
+            <img src="./assets/phone.svg" alt="">
+            <div class="right-flex">
+            <h3> Teléfono </h3>
+            <p>Número de teléfono</p>
+            </div>
+          </div>
+          <div class="mail-to">
+            <img src="./assets/mail-to.svg" alt="">
+            <div class="right-flex">
+            <h3> Correo Elctrónico </h3>
+            <p>Dirección de correo</p>
+            </div>
+           </div>
+        </div>
+      </div>
+      <div class="footer-left">
+         <img src="./assets/logo-footer.svg" alt="">
+        </div>
+      </footer>
+      <div class="bottom-txt">
+        <p>Todos los derechos reservados de Frontend I & modificado por @btomasmaiochi</p>
+      </div>
+    </body>
 </html>
->>>>>>>>> Temporary merge branch 2
+ 
