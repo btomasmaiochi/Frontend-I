@@ -61,6 +61,10 @@
   height: 38px;
 }
 
+.menu-icon {
+  display: none;
+}
+
 .header-ul {
   list-style: none;
 }
@@ -267,12 +271,12 @@ button:first-child {
 
 .reset:hover {
   background-color: rgb(210, 47, 47);
-  border: 2px solid var(--gray03);
+  border: 2px solid rgb(210, 47, 47);
 }
 
 .submit:hover {
   background-color: rgb(86, 156, 86);
-  border: 2px solid var(--yellow);
+  border: 2px solid rgb(86, 156, 86);
 }
 
 .subscribe {
@@ -405,4 +409,110 @@ footer {
   display: flex;
 }
 
+@media screen and (max-width: 767px) {
 
+  .header-top {
+    padding: 0 20px;
+  }
+  
+  .text-header {
+    font-size: 13px;
+  }
+  
+  .header-top-right {
+    font-size: 13px;
+  }
+  
+  .header-bottom {
+    padding: 30px;
+  }
+  
+  img.logo {
+    width: 200px;
+    height: 70px;
+  }
+  
+  .menu-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav > ul {
+    display: none;
+  }
+  
+  .img-text {
+    float: none;
+    margin: 0 auto;
+    width: 300px;
+  }
+  
+  .white-bg {
+    font-size: 25px;
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .comedores-off {
+    font-size: 10px;
+  }
+  
+  .best-products-text > h1 {
+    font-size: 28px;
+  }
+  
+  .best-products-text > img {
+    width: 65px;
+    height: 65px;
+  }
+  
+  .cards {
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    margin: 0 10px 32px 10px;
+  }
+  
+  .subscribe {
+    flex-direction: column;
+    height: 150px;
+    width: 100%;
+  }
+  
+  .subscribe-left, .subscribe-form {
+    padding: 0 15px;
+  }
+  
+  .subscribe-left > img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .subscribe-left > h2 {
+    font-size: 18px;
+  }
+  
+  .subscribe-form > input {
+    width: 220px;
+  }
+  
+  footer  {
+    justify-content: center;
+    flex-direction: column;
+    height: 340px;
+  }
+  
+  .footer-top {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  
+  .footer-left {
+    padding-right: 0;
+  }
+  
+  .bottom-txt > p {
+    font-size: 14px;
+  }
+}
