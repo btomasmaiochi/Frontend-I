@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --black: #222222;
+    --white-text: #F3F3F3;
+    --red: #FC200C;
+    --green: #39B24A;
+    --gray: #E5E5E5;
+}
+
+body {
+    background-color: var(--gray);
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: var(--black);
+    padding: 10px 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--white-text);
+}
+
+a:hover {
+    color: var(--green);    
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+}
+
+.header-li {
+    margin-left: 13px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    margin: 35px 19px;
+    height: 65vh;
+}
+
+.main-left {
+    width: 490px;
+    height: 350px;
+    background-image: url(./assets/delivery.svg);
+}
+
+.main-right {
+    width: 490px;
+    height: 350px;
+    border-radius: 5px;
+    margin-left: 5px;
+    background-color: var(--white-text);
+}
+
+.right-podio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 26px 160px 30px 160px;
+    width: 180px;
+}
+
+.right-podio > h3 {
+    font-size: 24px;
+    color: var(--red);
+}
+
+.right-content > h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.right-content > ol li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.pizza-img {
+    margin-left: 101px;
+}
+
+.right-pizza {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer {
+    background-color: var(--black);
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.nav-footer {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+
+}
+
+.nav-footer .footer-li {
+    margin-bottom: 12px;
+}
