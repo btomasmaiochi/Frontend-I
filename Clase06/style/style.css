@@ -77,6 +77,17 @@
   margin-right: 16px;
 }
 
+nav ul li::before {
+  content:url(../assets/nav-pawprint.svg);
+  padding-right: 5px;
+  visibility: visible;
+}
+
+nav ul li:hover::before {
+  visibility: visible;
+  content: url(../assets/nav-pawprint-brown.svg);
+}
+
 .nav-a > img {
   margin-right: 8px;
 }
