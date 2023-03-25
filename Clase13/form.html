@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/form.css">
     <title>Document</title>
 </head>
 <body>
@@ -29,8 +29,88 @@
 
     <main>
         <section class="form">
+            <div class="form-header">
+                <h2>Añadí tu super!</h2>
+                <p> Agregá tu personaje favorito completando las opciones</p>
+            </div>
+            <div class="form-all">
+
+                <div class="name">
+                    <label for="name">* Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Ej. Bruna">
+                </div>
+
+                <div class="date">
+                    <label for="date"> Fecha </label>
+                    <input type="date" name="date" id="date">
+                </div>
+
+                <div class="description">
+                   <textarea name="description" id="description" cols="30" rows="15" placeholder="Description"></textarea>
+                </div>
+
+                <div class="especie-all">
+                    <label for="especie">* Especie</label>
+                    <select class="especie" id="especie">
+                        <option>Especie</option>
+                        <option>Telequinesis</option>
+                        <option>Mutante</option>
+                        <option>Místico</option>
+                        <option>Unknown</option>
+                      </select>
+                </div>
+
+                <div class="photo">
+                    <label for="photo"> Agregar foto </label>
+                    <input type="file" name="photo" id="photo">
+                </div>
+
+                <div class="powers">
+                    <h3>Poderes</h3>
+                    <div class="power-checkbox">
+                        <div class="fly">
+                            <input type="checkbox" name="volar" id="volar"> 
+                            <label for="volar">Volar</label> 
+                        </div>
+                        <div class="smart">
+                            <input type="checkbox" name="inteligencia" id="inteligencia">
+                            <label for="inteligencia">SuperInteligencia</label> 
+                        </div>
+                        <div class="laser">
+                            <input type="checkbox" name="laser" id="laser">  
+                              <label for="laser">Vista de rayo láser</label>
+                        </div>
+                        <div class="wallet">
+                            <input type="checkbox" name="billetera" id="billetera"> 
+                            <label for="billetera">Billetera gorda</label>                            
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                
+                <div class="radius">
+                    <div class="personaje">
+                        <h3 class="typeofpersonaje">Tipo de personaje</h3>
+                    </div>
+                    <div class="hero">
+                        <input type="radio" name="hero" id="hero"><label for="hero">Héroe / Heroina</label>
+                    </div>
+                    <div class="villano">                            
+                        <input type="radio" name="villano" id="villano"><label for="villano">Villano / Villana</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="add-container">
+                <button class="add"> Añadir </button>
+            </div>
         </section>
     </main>
-    
+   
+    <footer>
+        <p>Todos los derechos reservados a Frontend I</p>
+    </footer>
+ 
 </body>
 </html>

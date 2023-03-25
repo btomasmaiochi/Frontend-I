@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --blue: #00669F;
+    --light-blue: #4DD1FB;
+    --aqua: #1CD1B0;
+    --black: #000000;
+    --black01: #001D2D;
+    --white: #ffffff;
+    --grey: #cecece;
+}
+
+.header-top {
+    width: 100%;
+    height: 23px;
+    background-color: var(--aqua);
+}
+
+.header-top > p {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px 0 3px 20px;
+}
+
+.header-bottom {
+    width: 100%;
+    height: 80px;
+    background-color: var(--blue);
+    padding: 3px 0 3px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-bottom > h1 { 
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 500;;
+    margin-left: 20px;
+}
+
+nav {
+    width: 100%;
+    height: 40px;
+    background-color: var(--black01);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px 11px 0;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--white);
+    margin-left: 20px;
+}
+
+nav ul li a:hover{
+    color: var(--aqua);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 954px;
+    height: 832px;
+    border: 1px solid var(--blue);
+    border-radius: 49px;
+    margin: 40px;
+    background-color: var(--blue);
+}
+
+.form-header {
+    width: 100%;
+    height: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    color: var(--white)
+}
+
+.form-header > h2 {
+    margin-bottom: 16px;
+    font-size: 38px;
+}
+
+.form-header > p {
+    font-size: 18px;
+}
+
+.form-all {
+    width: 709px;
+    height: 600px;
+    margin-left: 100px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.name, .date {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    color: var(--white);
+}
+
+.name > label, .date > label, .especie-all > label, .photo > label, .powers > h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.name > input, .date > input, .especie {
+    width: 340px;
+    height: 50px;
+    border-radius: 16px;
+    border: 1px solid var(--white);
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.name input:focus-visible {
+    background-color: var(--aqua);
+    outline: none;
+}
+
+.description > textarea {
+    width: 343px;
+    height: 335px;
+    margin-top: 30px;
+    border-radius: 16px;
+    padding: 15px;
+    resize: none;
+}
+
+.description > textarea:focus:hover {
+    outline: none;
+    background-color: #1CD1B0;
+    color: var(--black);
+}
+
+.especie-all, .photo, .powers {
+    margin-top: 15px;
+    margin-left: 23px;
+    color:var(--white);
+}
+
+.especie {
+    display: flex;
+    margin-top: 20px;
+}
+
+select:first-child {
+    color: var(--grey)
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 0 23px;
+}
+
+.photo > label {
+    margin-bottom: 22px;
+}
+
+input[type=file]::file-selector-button {
+    width: 223px;
+    height: 32px;
+    margin-right: 20px;
+    border: none;
+    background: var(--grey);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: var(--aqua);
+    color: var(--white);
+}
+
+.powers > h3 {
+    margin-top: 46px;
+    margin-bottom: 12px;
+}
+
+.fly, .smart, .laser, .wallet {
+    margin-bottom: 12px;
+}
+
+.fly > label, .smart > label, .laser > label, .wallet > label {
+    font-size: 1rem;
+}
+
+input[type=checkbox] {
+    margin-right: 20px;
+    width: 24px;
+    height: 20px;
+}
+
+input[type=checkbox]:checked{
+    accent-color: var(--light-blue);
+    
+}
+
+hr {
+    margin-top: 21px;
+    margin-left: 23px;
+    width: 343px;
+    height: 1px;
+    background-color: var(--grey);
+    border: none;
+}
+
+.typeofpersonaje{
+    margin-top: 21px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.radius {
+    color: var(--white);
+    margin-left: 22px;
+}
+
+.hero > input, .villano > input {
+    margin-right: 20px;
+}
+
+.hero > input {
+    margin-bottom: 8px;
+}
+
+input[type=radio]:checked {
+    accent-color: var(--light-blue);
+}
+
+footer {
+    width: 100%;
+    height: 62px;
+    text-align: center;
+    background-color: var(--blue);
+}
+
+footer > p {
+    padding: 21px 0;  
+    color: var(--white);
+}
+
+.add {
+    width: 250px;
+    height: 45px;
+    background-color: var(--aqua);
+    border: none;
+    border-radius: 15px;
+    color: var(--black);
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.add-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
